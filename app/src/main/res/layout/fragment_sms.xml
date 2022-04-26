@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SmsFragment">
+
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Делитесь идеями с друзьями"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/edittext_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/black"
+        android:hint="Поиск по имени или эл. адресу"
+        android:imeOptions="actionSearch"
+        android:keyboardNavigationCluster="true"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view"
+        app:layout_constraintVertical_bias="0.05" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_contact"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="#E80C0C"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edittext_search"
+        app:layout_constraintVertical_bias="0.05"
+        app:shapeAppearanceOverlay="@style/circle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cинхр. контакты"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/image_contact"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toRightOf="@id/image_contact"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_contact" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_edit"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="#E80C0C"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:shapeAppearanceOverlay="@style/circle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
